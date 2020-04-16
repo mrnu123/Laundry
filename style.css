@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+        url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+        url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-image: url("pic/32372.jpg");
+    opacity: 0.9;
+    /* Set a specific height */
+    /* min-height: 400px; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    font-size: 18px;
+}
+
+footer.blockquote-footer {
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    color: gainsboro;
+    font-size: 14px;
+}
+.vertical-center {
+    /* min-height: 100%;   */
+    /* Fallback for browsers do NOT support vh unit */
+    /* min-height: 100vh; */
+     /* These two lines are counted as one :-)       */
+    height: 100%;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    background-attachment: fixed;
+
+  }
+cite {
+    color: gainsboro;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#TitleRegister {
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 4px #173F5F;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+#send {
+    text-align: right;
+}
+
+/* .parallax { */
+    /* The image used */
+    /* background-image: url("pic/32372.jpg"); */
+
+    /* Set a specific height */
+    /* min-height: 400px; */
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.9); }
+.material-icons.md-darkpink { color: rgba(2, 59, 21, 0.9); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+;
