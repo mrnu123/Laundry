@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<?php
+session_start();
+?>
 <head>
     <title>Register</title>
     <?php
@@ -35,43 +37,43 @@
                                     <div class="col col-lg-6">
                                         <div class="form-group">
                                             <label class="mb-0" for="fname">ชื่อ</label>
-                                            <input class="form-control" type="text" name="fname" id="fname" placeholder="ตัวอย่าง สมศรี">
+                                            <input class="form-control" type="text" name="fname" id="fname" placeholder="ตัวอย่าง สมศรี" required>
                                         </div>
                                     </div>
                                     <div class="col col-lg-6">
                                         <div class="form-group">
                                             <label class="mb-0" for="lname">สกุล</label>
-                                            <input class="form-control" type="text" name="lname" id="lname" placeholder="ตัวอย่าง ตั้งใจเรียน">
+                                            <input class="form-control" type="text" name="lname" id="lname" placeholder="ตัวอย่าง ตั้งใจเรียน"required>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="email" class="mb-0">E-mail</label>
-                                    <input class="form-control" id="email" type="email" aria-describedby="emailHelp" placeholder="ตัวอย่าง Somsri_TH@webmaster.com">
+                                    <input class="form-control" name="email" id="email" type="email" aria-describedby="emailHelp" placeholder="ตัวอย่าง Somsri_TH@webmaster.com" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="tel" class="mb-0">หมายเลขโทรศัพท์</label>
-                                    <input class="form-control" id="tel" type="tel" placeholder="ตัวอย่าง 0912345678">
+                                    <input class="form-control" name="tel" id="tel" type="tel" placeholder="ตัวอย่าง 0912345678" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="userName" class="mb-0">ชื่อผู้ใช้งาน</label>
-                                    <input class="form-control" id="userName" type="text" placeholder="ตัวอย่าง SomSri">
+                                    <input class="form-control" name="username" id="userName" type="text" placeholder="ตัวอย่าง SomSri" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="pwd" class="mb-0">รหัสผ่าน</label>
-                                    <input class="form-control" id="pwd" type="password" placeholder="************">
+                                    <input class="form-control" name="password" id="pwd" type="password" placeholder="************" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="birthDay" class="mb-0">วันเกิด</label>
-                                    <input class="form-control" id="birthDay" type="date">
+                                    <input class="form-control" name="DOB" id="birthDay" type="date" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="gender" class="mb-0">เพศ</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>--กรุณาเลือก--</option>
-                                        <option>ชาย</option>
-                                        <option>หญิง</option>
+                                    <select  class="form-control" name="gender" id="exampleFormControlSelect1"  required>
+                                        <option value="">--กรุณาเลือก--</option>
+                                        <option value=0>ชาย</option>
+                                        <option value=1>หญิง</option>
                                     </select>
                                 </div>
 

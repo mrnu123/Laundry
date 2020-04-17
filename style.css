@@ -35,11 +35,12 @@ footer.blockquote-footer {
     color: gainsboro;
     font-size: 14px;
 }
+
 .vertical-center {
     /* min-height: 100%;   */
     /* Fallback for browsers do NOT support vh unit */
     /* min-height: 100vh; */
-     /* These two lines are counted as one :-)       */
+    /* These two lines are counted as one :-)       */
     height: 100%;
     display: flex;
     vertical-align: middle;
@@ -47,7 +48,8 @@ footer.blockquote-footer {
     background-color: rgb(228, 228, 228);
     background-attachment: fixed;
 
-  }
+}
+
 cite {
     color: gainsboro;
     font-weight: lighter;
@@ -76,30 +78,55 @@ cite {
     font-size: 48px;
 }
 
+.material-icons.md-100 {
+    font-size: 250px;
+}
+
+.regis_success {
+    text-align: center;
+    font-size: 50px;
+    color: green;
+}
+#center{
+    text-align: center;
+}
 #send {
     text-align: right;
 }
 
 /* .parallax { */
-    /* The image used */
-    /* background-image: url("pic/32372.jpg"); */
+/* The image used */
+/* background-image: url("pic/32372.jpg"); */
 
-    /* Set a specific height */
-    /* min-height: 400px; */
+/* Set a specific height */
+/* min-height: 400px; */
 
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed;
+/* Create the parallax scrolling effect */
+/* background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 } */
 
 
-.material-icons.md-dark { color: rgba(0, 0, 0, 0.9); }
-.material-icons.md-darkpink { color: rgba(2, 59, 21, 0.9); }
-.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.9);
+}
 
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-darkpink {
+    color: rgba(2, 59, 21, 0.9);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
 
 ;
