@@ -26,6 +26,8 @@ $sql = "INSERT INTO tb_user (fname, lname, email,tel,username,password,DOB,gende
 VALUES ('$fname', '$lname', '$email','$tel','$username','$password','$DOB',$gender,'$date_time')";
 // mysqli_query($conn, $sql)
 
+
+
 ?>
 
 <html>
@@ -61,9 +63,10 @@ VALUES ('$fname', '$lname', '$email','$tel','$username','$password','$DOB',$gend
                     <?php
                     echo "ลงทะเบียนสำเร็จ";                   
                         
-                } else {
+                } else{
                          echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-                        }
+                }
+                        
 
 $conn->close();
 ?>

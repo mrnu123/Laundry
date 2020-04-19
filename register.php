@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+include'process.php';
+?>
 <html>
 <?php
 session_start();
@@ -8,15 +10,15 @@ session_start();
     <?php
     include 'metaHead.html';
     ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-<div class="jumbotron vertical-center mb-0">
-    <div class="container mt-4">
         <?php
         include 'header.html';
         ?>
-       
+       <!-- <div class="jumbotron vertical-center mb-0"> -->
             <div class="container">
                 <div class="row mt-5">
                     <div class="col col-lg-2"></div>
@@ -32,7 +34,7 @@ session_start();
                                     </footer>
                                 </h2>
                             </div>
-                            <form class="mx-3" action="register_confirm.php" method="post">
+                            <form name="registerForm" class="mx-3" action="register_confirm.php" method="post" onsubmit="return validateForm()">
                                 <div class="row mb-0">
                                     <div class="col col-lg-6">
                                         <div class="form-group">
@@ -50,18 +52,23 @@ session_start();
 
                                 <div class="form-group">
                                     <label for="email" class="mb-0">E-mail</label>
+                                    <div>
                                     <input class="form-control" name="email" id="email" type="email" aria-describedby="emailHelp" placeholder="ตัวอย่าง Somsri_TH@webmaster.com" required>
-                                </div>
+                                    <span></span>
+                                    </div>
                                 <div class="form-group">
                                     <label for="tel" class="mb-0">หมายเลขโทรศัพท์</label>
                                     <input class="form-control" name="tel" id="tel" type="tel" placeholder="ตัวอย่าง 0912345678" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="userName" class="mb-0">ชื่อผู้ใช้งาน</label>
-                                    <input class="form-control" name="username" id="userName" type="text" placeholder="ตัวอย่าง SomSri" required>
+                                    <div>
+                                    <input class="form-control" name="username" id="username" type="text" placeholder="ตัวอย่าง SomSri" required>
+                                    <span></span>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="pwd" class="mb-0">รหัสผ่าน</label>
+                                    <label for="pwd" class="mb-0 mt-0">รหัสผ่าน</label>
                                     <input class="form-control" name="password" id="pwd" type="password" placeholder="************" required>
                                 </div>
                                 <div class="form-group">
@@ -77,11 +84,11 @@ session_start();
                                     </select>
                                 </div>
 
-                                <div class="row">
-                                    <button class="btn btn-primary mb-3 mx-auto" type="submit">
+                                <div class="row mb-0">
+                                    <button class="btn btn-primary mb-0 mx-auto" type="submit">
                                         <div class="row mx-auto">
                                             <div class="col mx-auto mt-2">สร้างบัญชี</div>
-                                            <div class="col mx-auto mt-2">
+                                            <div class="col mx-auto mt-2 mb-2">
                                                 <span class="material-icons md-24">
                                                     send
                                                 </span>
@@ -95,7 +102,10 @@ session_start();
                     <div class="col col-lg-2"></div>
                 </div>
             </div>
-        </div>
+       <!-- </div> -->
+        
 </body>
 
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+<script src="script.js"></script>

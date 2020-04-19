@@ -45,7 +45,7 @@ footer.blockquote-footer {
     display: flex;
     vertical-align: middle;
     align-items: center;
-    background-color: rgb(228, 228, 228);
+    background-color: rgba(228, 228, 228,0.2);
     background-attachment: fixed;
 
 }
@@ -92,6 +92,19 @@ cite {
 }
 #send {
     text-align: right;
+}
+span{
+    font-size: 10px;
+}
+.form_error{
+    font-weight: lighter;
+    color: red;
+    
+}
+.form_success{
+    font-weight: lighter;
+    font-size: 10px;
+    color: green;
 }
 
 /* .parallax { */
