@@ -1,4 +1,7 @@
-       <div class="container">
+<?php
+session_start();
+?>
+<div class="container">
            <div class="row mt-4">
 
                <nav class="navbar fixed-top navbar-dark" style="background-color:#fff;">
@@ -14,14 +17,13 @@
                         <a class="nav-link active ml-5" href="index.php">Booking for Laundry</a>
                     </li>
                    </ul>
-                   <ul class="nav justify-content-end" style="font-size:20px;">
-                       <li class="nav-item">
-                           <a class="nav-link active" href="login.php">เข้าสู่ระบบ</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="register.php">ลงทะเบียน</a>
-                       </li>
-                   </ul>
+                   <div class="nav justify-content-end" style="font-size:20px; color:green;">
+                    <ul class="nav ml-5" style="color:gray;">
+                        <li class="nav-item ml-5">
+                            <a class="nav-link active ml-5" href="logout.php">ออกจากระบบ</a>
+                        </li>
+                    </ul>
+                    </div>  
                </nav>
            </div>
        </div>

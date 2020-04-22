@@ -2,12 +2,19 @@
 
 <head>
     <?php
+    session_start();
     include 'metaHead.html';
     ?>
 </head>
 <body>
     <?php
-    include 'header.html';
+    if(isset($_SESSION['username'])){
+        include 'headersuccess.php';
+    }
+    else{
+        include 'header.html';
+    }
+    
     ?>
 </body>
 </html>

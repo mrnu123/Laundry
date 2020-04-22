@@ -85,7 +85,7 @@ session_start();
                                 </div>
 
                                 <div class="row mb-0">
-                                    <button class="btn btn-primary mb-0 mx-auto" type="submit">
+                                    <button class="btn btn-primary mt-3 mb-0 mx-auto" type="submit">
                                         <div class="row mx-auto">
                                             <div class="col mx-auto mt-2">สร้างบัญชี</div>
                                             <div class="col mx-auto mt-2 mb-2">

@@ -9,6 +9,11 @@
 
 <body>
     <?php
+    session_start();
+    if($_SESSION['login_status']==false){
+        header("Location:login.php");
+        exit;
+    }
     include 'header.html';
     ?>
     <div class="jumbotron vertical-center mb-0">
@@ -22,7 +27,9 @@
                                 <h2 id="TitleRegister" class="ml-3 mt-5 mb-3">เข้าสู่ระบบ</h2>
                             </h2>
                         </div>
-                        <div id="error_msg"></div>
+                        <div id="error_msg">
+                           ชื่อผู้ใช้งาน หรือ รหัสผ่านผิด
+                        </div>
                         <form class="mx-3" action="login_confirm.php" method="POST">
                             <div class="form-group">
                                 <label for="username" class="mb-0">ชื่อผู้ใช้งาน</label>

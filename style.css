@@ -35,7 +35,11 @@ footer.blockquote-footer {
     color: gainsboro;
     font-size: 14px;
 }
-
+#error_msg{
+    color:red;
+    font-size:18px;
+    text-align: center;
+}
 .vertical-center {
     /* min-height: 100%;   */
     /* Fallback for browsers do NOT support vh unit */
@@ -45,7 +49,7 @@ footer.blockquote-footer {
     display: flex;
     vertical-align: middle;
     align-items: center;
-    background-color: rgba(228, 228, 228,0.2);
+    background-color: rgba(255, 255, 255,0.1);
     background-attachment: fixed;
 
 }
@@ -94,16 +98,14 @@ cite {
     text-align: right;
 }
 span{
-    font-size: 10px;
+    font-weight: lighter;
+    font-size: 14px;
 }
 .form_error{
-    font-weight: lighter;
     color: red;
     
 }
 .form_success{
-    font-weight: lighter;
-    font-size: 10px;
     color: green;
 }
 
